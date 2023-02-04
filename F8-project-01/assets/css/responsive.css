@@ -1,0 +1,135 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .navbar-list {
+        display: none; 
+    }
+    .hero-img {
+        /* display: none; */
+        width: 40%;
+        right: calc((100vw - 740px)/2);
+    }
+    .sub-title ,
+    .hero .desc {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .hero .title {
+        font-size: 3.6rem;
+        text-align: center;
+    }
+    .hero-cta {
+        padding: 13px 8px;
+        margin-left: 8px;
+    }
+
+    .list-guide {
+        margin-top: 50px;
+    }
+
+    .guide-item {
+        margin-top: 30px;
+    }
+
+    .featured-header {
+        text-align: center;
+    }
+    .featured-header__link {
+        display: inline-block;
+        margin-top: 16px;
+        float: none;
+    }
+
+    .stats-content {
+        flex-wrap: wrap;
+    }
+    .stats-content-img__block {
+        float: none;
+        
+    }
+    .stats-trend {
+        left: auto;
+        width: 239px;
+    }
+    .stats-content__info {
+        padding: 0;
+        margin: 50px; 
+    }
+    .stats-content__sub-title,
+    .stats-content__desc {
+        width: auto;
+    }
+
+    .stats-qty {
+        margin-top: 0;
+    }
+    .qty-item {
+        text-align: center;
+    }
+
+
+    .subscription-body {
+        align-items: flex-start;
+
+    }
+    .subscription-body__info {
+        margin: 20px;
+    }
+    .subscription-body__info-title {
+        font-size: 2.8rem;
+    }
+    .subscription-body__img {
+        width: 150px;
+        right: 50px;
+        object-fit: cover;
+    }
+    .footer {
+        margin-top: 5px;
+    }
+    .footer-heading {
+        margin-top: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .navbar-img {
+        margin: auto;
+    }
+    .actions {
+        margin-right: 16px;
+    }
+    .hero-img {
+        /* display: none; */
+        right: 0;
+    }
+    .clients-item {
+        display: block;
+        text-align: center;
+    }
+    .stars,
+    .clients-desc {
+        margin-top: 8px;
+    }
+    .trademark {
+        text-align: center;
+    }
+
+    .subscription-body__img {
+        width: 130px;
+        right: 50px;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    .footer-social {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-license__copyright {
+       margin-top: 20px;
+       text-align: center;
+       width: 100%;
+    }
+}
