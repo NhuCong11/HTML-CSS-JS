@@ -1,0 +1,129 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    /* Hero */
+    .hero-body {
+        display: block;
+    }
+    .hero-body__media,
+    .hero-body__content {
+        width: 100%;
+    }
+    .hero-body__content {
+        padding-left: 10px;
+    }
+    .hero-body__content-heading {
+        font-size: 4.8rem;
+    }
+    .hero-body__content-cta {
+        justify-content: center;
+    }
+    .hero-body__content-btn {
+        line-height: 50px;
+    }
+    .center {
+        text-align: center;
+    }
+    /* Features */
+    .features {
+        margin-top: 20px;
+    }
+    .features-body {
+        display: block;
+    }
+    .features-content,
+    .features2 .features-content {
+        margin-top: 16px;
+        padding: 0 16px;
+        width: 100%;
+    }
+    .features2 {
+        margin-top: 0;
+    }
+    /* Blog */
+    .blog-item {
+        margin-top: 15px;
+    }
+    /* Footer */
+    .footer {
+        text-align: center;
+    }
+    .footer-desc {
+        margin: 16px auto 0;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+    .footer-heading {
+        margin-top: 30px;
+    }
+    .footer-heading::after {
+        left: calc(50% - 65px);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .hero-body__content {
+        padding: 64px 0px 0px 70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    /* Header */
+    .header-body {
+        justify-content: space-around;
+    }
+    .header-nav {
+        display: none;
+    }
+    .hero-body__media-img {
+        max-width: 70%;
+    }
+    .hero-body__media-summary {
+        max-width: 200px;
+        padding: 15px;
+        right: 50px;
+        bottom: -50px;
+    }
+    .hero-body__content {
+        width: 100%;
+    }
+    /* Popular */
+    .popular-top {
+        display: block;
+        padding-left: 10px;
+    } 
+    .popular-control {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Feedback */
+    .feedback {
+        padding: 50px 10px;
+        background: #2e2100;
+    }
+    .feedback-item-dots__dot {
+        margin-right: 20px;
+    }
+    .feedback-item-content__open-quotes {
+        position: relative;
+        left: -20px;
+    }
+    .feedback-item-content blockquote {
+        margin-left: 12px;
+        font-size: 1.8rem;
+    }
+    /* Features */
+    .features-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px 0;
+    }
+    .features-images img:first-child {
+        margin-left: 60px;
+    }
+    .features-images img:last-child {
+        margin-right: 60px;
+    }
+}
