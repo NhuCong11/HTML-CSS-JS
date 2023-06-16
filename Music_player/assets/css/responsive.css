@@ -1,0 +1,22 @@
+@media (max-width: 739px) {
+    .player {
+        max-width: 480px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .dashboard {
+        position: fixed;
+        background-color: #ffffff;
+    }
+
+    .playlist {
+        margin-top: 408px;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .song {
+        background-color: #ffffff;
+    }
+}
