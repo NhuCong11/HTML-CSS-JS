@@ -42,13 +42,25 @@ const app = {
             name: '佛系少女',
             singer: '冯提莫',
             path: './assets/music/冯提莫《佛系少女》Phật-hệ-thiếu-nữ-.mp3',
-            image: './assets/img/fengtimo.jpg'
+            image: './assets/img/fengtimo1.jpg'
+        },
+        {
+            name: 'Minimanimo',
+            singer: '冯提莫',
+            path: './assets/music/minimanimo.mp3',
+            image: './assets/img/minimanimo.jpg'
+        },
+        {
+            name: '我是真的爱',
+            singer: '冯提莫',
+            path: './assets/music/我是真的爱.mp3',
+            image: './assets/img/我是真的爱.jpg'
         },
         {
             name: '窥',
             singer: '冯提莫',
             path: './assets/music/冯提莫《窥》.mp3',
-            image: './assets/img/fengtimo.jpg'
+            image: './assets/img/fengtimo2.jpg'
         },
         {
             name: '青梅雨水',
@@ -58,9 +70,9 @@ const app = {
         },
         {
             name: '放空',
-            singer: '冯提莫',
+            singer: '冯提莫 - cover',
             path: './assets/music/放空_FengTimo.mp3',
-            image: './assets/img/fengtimo.jpg'
+            image: './assets/img/fengtimo4.jpg'
         },
         {
             name: 'What are word',
@@ -69,10 +81,34 @@ const app = {
             image: './assets/img/fengtimo.jpg'
         },
         {
-            name: '勾指起誓',
-            singer: '冯提莫',
+            name: '去年夏天',
+            singer: '冯提莫 - cover',
             path: './assets/music/《勾指起誓》.mp3',
-            image: './assets/img/fengtimo.jpg'
+            image: './assets/img/fengtimo3.jpg'
+        },
+        {
+            name: 'Sam Feldt',
+            singer: '冯提莫 - cover',
+            path: './assets/music/Sam Feldt.mp3',
+            image: './assets/img/Sam Feldt.jpg'
+        },
+        {
+            name: '勾指起誓',
+            singer: '王大毛',
+            path: './assets/music/去年夏天.mp3',
+            image: './assets/img/去年夏天.jpg'
+        },
+        {
+            name: 'Nevada',
+            singer: 'Vicetone',
+            path: './assets/music/Nevada.mp3',
+            image: './assets/img/nevada.jpg'
+        },
+        {
+            name: 'Monsters',
+            singer: 'Katie Sky',
+            path: './assets/music/monster.mp3',
+            image: './assets/img/Monster.jpg'
         },
         {
             name: 'Faded',
@@ -80,12 +116,6 @@ const app = {
             path: './assets/music/Alan_Walker_-_FadedMP3_128K.mp3',
             image: './assets/img/alw.jpg'
         },
-        {
-            name: 'Đường đến ngày vinh quang',
-            singer: 'Bức Tường',
-            path: './assets/music/DuongDenNgayVinhQuang-BucTuong-553864.mp3',
-            image: './assets/img/buctuong.jpg'
-        }
     ],
     setConfig: function (key, value) {
         this.config[key] = value;
