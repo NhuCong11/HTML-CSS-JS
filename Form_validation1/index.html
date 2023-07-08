@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From validation</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Thành viên đăng ký</h3>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                <input id="fullname" name="fullname" type="text" placeholder="VD: Như Công" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Giới tính</label>
+                <div class="genderRadio">
+                    <div class="genderRadioInput">
+                        <input name="gender" type="radio" value="male" class="form-control">
+                        Nam
+                    </div>
+                    <div class="genderRadioInput">
+                        <input name="gender" type="radio" value="female" class="form-control">
+                        Nữ
+                    </div>
+                    <div class="genderRadioInput">
+                        <input name="gender" type="radio" value="orther" class="form-control">
+                        Khác
+                    </div>
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="province" class="form-label">Tỉnh/TP</label>
+                <select id="province" name="province" class="form-control">
+                    <option value="">-- Chọn Tỉnh/TP</option>
+                    <option value="HN">Hà Nội</option>
+                    <option value="HB">Hòa Bình</option>
+                    <option value="TN">Thái Nguyên</option>
+                    <option value="HNA">Hà Nam</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar" class="form-label">Avatar</label>
+                <input id="avatar" name="avatar" type="file" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu"
+                    type="password" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <button class="form-submit">Đăng ký</button>
+        </form>
+
+    </div>
+
+    <script src="./validation1.js"></script>
+    <script>
+        // Mong muốn của chúng ta
+        Validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            error: '.form-message',
+            rules: [
+                // Đang chạy 2 hàm
+                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                Validator.isRequired('input[name="gender"]'),
+                Validator.isRequired('#province'),
+                Validator.isRequired('#avatar'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirmed('#password_confirmation', () => {
+                    return document.querySelector('#form-1 #password').value;
+                }, 'Mật khẩu nhập lại không chính xác')
+            ],
+            onSubmit: (data) => {
+                // Call API
+                console.log(data);
+            }
+        });
+    </script>
+</body>
+
+</html>
