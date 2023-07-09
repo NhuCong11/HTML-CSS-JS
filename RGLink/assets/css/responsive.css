@@ -1,0 +1,132 @@
+/* PC */
+@media (min-width: 64em) {
+    
+}
+/* tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+/* tablet & mobile */
+@media (max-width: 63.9375em) {
+    .header-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        font-weight: 700;
+        height: 0;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        overflow: hidden;
+        display: block;
+    }
+
+    .header-menu__item+.header-menu__item {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .header-menu__item__link {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        color: #000;
+    }
+
+    .header-icon {
+        display: block;
+    }
+
+    .pd-form {
+        padding: 0 52px 24px;
+    }
+
+    .url {
+        width: calc(100% - 110px);
+    }
+
+    .option-form {
+        flex-wrap: wrap;
+    }
+
+    .footer-license {
+        text-align: center;
+    }
+
+    .list-license {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 32px;
+    }
+} 
+
+/* mobile */
+@media (max-width: 46.1875em) {
+    .header {
+        margin: 0 16px;
+    }
+
+    .pd-form {
+        padding: 0 20px 24px;
+    }
+
+    .form-group {
+        min-width: 288px;
+    }
+
+    .url {
+        padding: 15px 16px;
+    }
+
+    .form-submit {
+        padding: 15px 25px;
+    }
+
+    .form-options {
+        padding-bottom: 26px;
+    }
+
+    .footer {
+        margin: 0 16px;
+    }
+
+    .footer-introduce {
+        padding-bottom: 120px;
+    }
+
+    .footer-introduce::before {
+        --margin-length: 60px;
+    }
+
+    .footer-introduce__desc {
+        margin-bottom: 80px;
+    }
+
+    .footer-introduce__list li a {
+        text-align: center;
+    }
+
+    .footer-license {
+        margin: 0 16px;
+    }
+
+    .list-license {
+        margin-top: 16px;
+    }
+
+    .list-license__item {
+        margin-top: 16px;
+    }
+
+    .footer-license__desc {
+        line-height: 1.7;
+        margin-top: 26px;
+    }
+
+}
