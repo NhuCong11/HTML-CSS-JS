@@ -229,6 +229,17 @@ a {
     transition: all ease 0.2s;
 }
 
+.form-error {
+    visibility: hidden;
+    margin-top: 8px;
+    font-size: 1.4rem;
+    color: red;
+}
+
+.error-form {
+    border: 2px solid red;
+}
+
 
 /* Footer */
 .footer-license {
