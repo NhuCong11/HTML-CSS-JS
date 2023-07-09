@@ -114,7 +114,7 @@ a {
 
 /* Form */
 .form {
-    height: calc(100vh - 252px);
+    height: calc(100vh - 262px);
 }
 
 .pd-form {
@@ -183,6 +183,7 @@ a {
 
 /* option form */
 .option-form {
+    top: 100px;
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -194,6 +195,7 @@ a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -215,6 +217,7 @@ a {
 }
 
 .form-control {
+    min-width: 272px;
     height: 50px;
     padding: 8px 12px;
     border: 1px solid #e2e8f0;
