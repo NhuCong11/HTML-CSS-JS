@@ -41,6 +41,10 @@
         display: block;
     }
 
+    .form {
+        height: calc(100vh - 200px);
+    }
+
     .pd-form {
         padding: 0 52px 24px;
     }
@@ -50,19 +54,12 @@
     }
 
     .option-form {
+        margin-top: 16px;
         flex-wrap: wrap;
     }
 
     .footer-license {
-        text-align: center;
-    }
-
-    .list-license {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 32px;
+        padding: 20px 0;
     }
 } 
 
@@ -70,6 +67,10 @@
 @media (max-width: 46.1875em) {
     .header {
         margin: 0 16px;
+    }
+
+    .form {
+        height: calc(100vh - 100px);
     }
 
     .pd-form {
@@ -85,48 +86,18 @@
     }
 
     .form-submit {
-        padding: 15px 25px;
+        padding: 18px 25px;
     }
 
     .form-options {
-        padding-bottom: 26px;
+        padding-bottom: 0;
     }
 
     .footer {
-        margin: 0 16px;
-    }
-
-    .footer-introduce {
-        padding-bottom: 120px;
-    }
-
-    .footer-introduce::before {
-        --margin-length: 60px;
-    }
-
-    .footer-introduce__desc {
-        margin-bottom: 80px;
-    }
-
-    .footer-introduce__list li a {
-        text-align: center;
+        margin-top: 180px;
     }
 
     .footer-license {
         margin: 0 16px;
     }
-
-    .list-license {
-        margin-top: 16px;
-    }
-
-    .list-license__item {
-        margin-top: 16px;
-    }
-
-    .footer-license__desc {
-        line-height: 1.7;
-        margin-top: 26px;
-    }
-
 }

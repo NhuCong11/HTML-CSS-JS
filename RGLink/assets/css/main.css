@@ -114,8 +114,9 @@ a {
 
 /* Form */
 .form {
-    height: 100vh;
+    height: calc(100vh - 252px);
 }
+
 .pd-form {
     padding: 0 80px 24px;
 }
@@ -227,50 +228,11 @@ a {
 
 
 /* Footer */
-.footer-introduce {
-    position: relative;
-    padding-bottom: 50px;
-}
-
-.footer-introduce::before {
-    --margin-length: 100px;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    display: block;
-    margin-left: var(--margin-length);
-    width: calc(100% - (2*var(--margin-length)));
-    border: 1px solid #36334e;
-    opacity: 0.5;
-}
-
-.footer-introduce__desc {
-    margin: 24px 0 16px 0;
-    padding-right: 24px;
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: #a8a7b3;
-    opacity: 0.8;
-}
-
-.footer-introduce__heading {
-    margin-bottom: 26px;
-    font-size: 1.6rem;
-    color: #eaecf3;
-}
-
-.footer-introduce__list li + li {
-    margin-top: 16px;
-}
-
-.footer-introduce__list li a {
-    padding: 4px;
-    font-size: 1.4rem;
-    color: #a0aec0;
-}
-
 .footer-license {
-    margin-top: 50px;
+    padding: 50px 0;
+    text-align: center;
+    line-height: 1.7;
+    border-top: 1px solid #3e3c55;
 }
 
 .footer-license__desc {
@@ -281,46 +243,6 @@ a {
 .footer-license__desc .home {
     color: #ffffffe6;
     font-weight: 700;
-}
-
-.list-license {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 32px;
-}
-
-.list-license__item + .list-license__item {
-    margin-left: 16px;
-}
-
-.list-license__item-link {
-    font-size: 1.4rem;
-    padding: 8px;
-}
-
-.list-license__item-link,
-.list-license__item-language {
-    color: #a0aec0;
-}
-
-.list-license__item-link:hover,
-.list-license__item-language:hover,
-.footer-introduce__list li a:hover {
-    cursor: pointer;
-    color: var(--while-color);
-}
-
-.list-license__item-language {
-    display: flex;
-    font-size: 1.4rem;
-    align-items: center;
-    transition: all ease-in 0.2s;
-}
-
-.list-license__item-language .language {
-    font-size: 1.4rem;
-    margin-left: 8px;
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {
