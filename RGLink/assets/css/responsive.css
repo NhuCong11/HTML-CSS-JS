@@ -1,11 +1,8 @@
 /* PC */
-@media (min-width: 64em) {
-    
-}
+@media (min-width: 64em) {}
+
 /* tablet */
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-    
-}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {}
 
 /* tablet & mobile */
 @media (max-width: 63.9375em) {
@@ -61,7 +58,7 @@
     .footer-license {
         padding: 20px 0;
     }
-} 
+}
 
 /* mobile */
 @media (max-width: 46.1875em) {
